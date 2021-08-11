@@ -13,3 +13,142 @@ body {
 a {
     text-decoration: none;
 }
+.contenedor {
+    max-width: 1300px;
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #214;
+}
+header h1 {
+    color: #bd5;
+    font-size: 48px;
+    padding: 10px;
+}
+#check {
+    display: none;
+}
+.abrir {
+    color: #bd5;
+    font-size: 36px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 3px solid #bd5;
+    display: none;
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li {
+    font-size: 20px;
+    padding: 0 15px;
+}
+a {
+    color: #bd5;
+    padding: 15px;
+}
+a:hover {
+    background: rgba(0,0,0,.3);
+}
+main {
+    display: flex;
+    width: 100%;
+}
+.articulos {
+    width: 70%;
+    background: #547;
+}
+article h1 {
+    font-size: 32px;
+    color: #bd5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+article img {
+    width: 100%;
+    border: 3px solid #000;
+}
+article p {
+    font-size: 16px;
+    color: #bd5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    background: #325;
+}
+.sidebar h2 {
+    font-size: 32px;
+    color: #bd5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.sidebar p {
+    font-size: 20px;
+    color: #bd5;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    background: #214;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 20px;
+}
+.footer p {
+    font-size: 20px;
+    color: #bd5;
+}
+.footer img {
+    width: 30px;
+}
+@media (max-width: 840px) {
+    .abrir {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 80px;
+        z-index: 100;
+        width: 96%;
+        background: #214;
+        transform: scale(0);
+        transform-origin: 0 0;
+        transition: all .5s;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    li {
+        padding: 15px;
+    }
+    #check:checked ~ .menu {
+        transform: scale(1);
+    }
+    .articulos {
+        width: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+}
