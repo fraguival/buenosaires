@@ -129,7 +129,8 @@ article p {
         top: 80px;
         z-index: 100;
         width: 96%;
-        background: #214;
+        height: 100vh;
+        background: rgba(34,17,68,.8);
         transform: scale(0);
         transform-origin: 0 0;
         transition: all .5s;
