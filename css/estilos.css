@@ -9,7 +9,6 @@ html {
 }
 body {
     font-family: 'Roboto Condensed', sans-serif;
-    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -25,10 +24,10 @@ a {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background: #214;
+    background: #122;
 }
 .header__titulo {
-    color: #bd5;
+    color: #fff;
     font-size: 48px;
     padding: 10px;
 }
@@ -36,11 +35,11 @@ a {
     display: none;
 }
 .header__abrir {
-    color: #bd5;
+    color: #fff;
     font-size: 36px;
     cursor: pointer;
     padding: 0 10px;
-    border: 3px solid #bd5;
+    border: 3px solid;
     display: none;
 }
 .nav__menu {
@@ -53,7 +52,7 @@ a {
     padding: 0 15px;
 }
 .nav__a {
-    color: #bd5;
+    color: #fff;
     padding: 15px;
 }
 .nav__a:hover {
@@ -65,11 +64,11 @@ main {
 }
 .articulos {
     width: 70%;
-    background: #547;
+    background: #344;
 }
 .articulo__titulo {
     font-size: 32px;
-    color: #bd5;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -80,7 +79,7 @@ main {
 }
 .articulo__texto {
     font-size: 16px;
-    color: #bd5;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
@@ -90,33 +89,34 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     width: 30%;
-    background: #325;
+    background: #233;
 }
 .sidebar__titulo {
     font-size: 32px;
-    color: #bd5;
+    color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 .sidebar__texto {
     font-size: 20px;
-    color: #bd5;
+    color: #fff;
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
 }
 .footer {
     width: 100%;
-    background: #214;
+    background: #122;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px;
     padding-top: 20px;
 }
 .footer__texto {
     font-size: 20px;
-    color: #bd5;
+    color: #fff;
 }
 .footer__img {
     width: 36px;
