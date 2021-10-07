@@ -9,6 +9,7 @@ html {
 }
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -118,7 +119,7 @@ main {
     color: #bd5;
 }
 .footer__img {
-    width: 30px;
+    width: 36px;
 }
 @media (max-width: 840px) {
     .header__abrir {
@@ -143,7 +144,7 @@ main {
     .nav__li {
         padding: 15px;
     }
-    #check:checked ~ .menu {
+    #check:checked ~ .nav {
         transform: scale(1);
     }
     .articulos {
